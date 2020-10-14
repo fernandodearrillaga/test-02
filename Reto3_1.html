@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <h1>dinero</h1>
+        <script>
+            function contarbilletes(){
+            var billetes=0;
+            var dinero = prompt("Introduce una cantidad", );
+            if (dinero%5!=0) {
+                alert("No es múltiplo de 5");
+            }
+            else {
+                while (dinero>=5){
+                    while(dinero>=500){
+                        if (dinero>=500){
+                            dinero=dinero-500;
+                            billetes=billetes+1;
+                            
+                        }
+                    }
+                    while(dinero>=200){
+                        if (dinero>=200){
+                            dinero=dinero-200;
+                            billetes=billetes+1;
+                        }
+                    }
+                    while(dinero>=100){
+                        if (dinero>=100){
+                            dinero=dinero-100;
+                            billetes=billetes+1;
+                        }
+                    }
+                    while(dinero>=50){
+                        if (dinero>=50){
+                            dinero=dinero-50;
+                            billetes=billetes+1;
+                        }
+                    }
+                    while(dinero>=20){
+                        if (dinero>=20){
+                            dinero=dinero-20;
+                            billetes=billetes+1;
+                        }
+                    }
+                    while(dinero>=10){
+                        if (dinero>=10){
+                            dinero=dinero-10;
+                            billetes=billetes+1;
+                        }
+                    }
+                    while(dinero>=5){
+                        if (dinero>=5){
+                            dinero=dinero-5;
+                            billetes=billetes+1;
+                        }
+                    }
+                    }
+                alert(billetes);
+                document.write(billetes);
+                
+            }
+        }
+        contarbilletes();
+        
+        </script>
+        
+    </body>
+</html>

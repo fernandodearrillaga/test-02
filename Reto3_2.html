@@ -1,0 +1,37 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            var cantidad=0;
+            var numeroalto=0;
+            var numerobajo=0;
+            var numero=0;
+            function numeros(){
+                var cantidad=prompt("Introduce una cantidad");
+                numero=prompt("Numero");
+                    cantidad--;
+                    numeroalto=numero;
+                    numerobajo=numero;
+                    
+                while (cantidad>0){
+                    numero=prompt("Numero");
+                    cantidad--;
+                    if (numero>numeroalto){
+                        numeroalto=numero;
+                    }
+                    if (numero<numerobajo){
+                        numerobajo=numero;
+                    }
+                }
+                alert("El numero más alto es "+numeroalto)
+                alert("El numero más bajo es "+numerobajo)
+            }
+            
+
+            numeros();
+        </script>
+        
+    </body>
+</html>
