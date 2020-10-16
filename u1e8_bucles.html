@@ -1,0 +1,38 @@
+<html>
+    <head>
+        <script>
+        function presidente(){
+            r='';       //Se inicializa la variable
+            while (r!='Suárez'){  //Mientras la respuesta no sea correcta, repetir el bucle.
+            r=prompt("Escriba el apellido del primer presidente de la democracia española"); //Pregunta
+            if(r!='Suárez') //Si la respuesta no es correcta se envía mensaje de error.
+            alert('ERROR');
+            }
+        };
+        function presidente2(){
+            r='';        //Se inicializa la variable
+            while (r!='Adolfo Suárez'){     //Mientras la respuesta no sea correcta, repetir el bucle.
+            r=prompt("¿Cuál fue el primer presidente de la democracia española?"); //Pregunta
+            if(r=='Adolfo')     //Respuesta incompleta.
+            alert('Te falta el apellido');
+            
+            if(r!='Adolfo Suárez')      //Si la respuesta no es correcta se envía mensaje de error.
+            if(r!='Adolfo')
+            alert('ERROR: Inténtelo de nuevo');
+            }
+        };
+    </script>
+    </head>
+    <body>
+        <script>    //Se ejecutan las funciones y después se muestra el mensaje inferior
+
+        presidente();
+        
+    </script>
+    <h1>BIENVENIDO</h1>     
+    <script>
+        presidente2();
+    </script>
+    <h1>SABIO</h1>
+    </body>
+</html>
