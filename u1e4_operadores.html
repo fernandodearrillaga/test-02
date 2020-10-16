@@ -1,0 +1,21 @@
+<html>
+<head>
+<script type="text/javascript">
+function mostrarMensaje() {
+var a, b, c, d, eTexto;
+a = 2; b = 7; c = true; d = false; eTexto = '1';
+alert ('VERDADERO' + (a+b > 8 && a-b < 1)); //a+b es mayor que 8 y a-b es menor que 1
+alert ('FALSO: ' + (a+b == 8 || a-b ==-2)); // ambas son falsas
+alert ('VERDADERO: ' + (c != d)); //true no es lo mismo que false
+alert ('FALSO: ' + (c == d)); // c no es igual a d
+alert ('FALSO: ' + (!a)); 
+alert ('FALSO: ' + (eTexto === 1)); // eTexto no es estrictamente igual a 1
+alert ('FALSO: ' + (eTexto !== 1 && eTexto != "Caracol")); //eTexto no es igual a "Caracol" por tanto es falso
+alert ('VERDADERO: ' + ('Zapato' !== 'almendra')); //No es estrictamente igual
+}
+mostrarMensaje();
+</script>
+</head>
+<body>
+</body>
+</html>
