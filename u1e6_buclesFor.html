@@ -4,26 +4,35 @@
 </head>
 <body>
     <script>
-        //for (i=0; i<3; i++){
 
-        //document.write(i);
-        for (j=8; j<10; j++){
+        for (j=8; j<10; j++){ //j==hora
             
 
-            for (k=0; k<60; k=k+15){
-                document.write('0' + j + ':' );
-
+            for (k=0; k<60; k=k+15){ //k==minutos
+                document.write('0' + j + ':' ); //Cuando la hora es inferior a 10, añadir un 0 a la izquierda en la hora 
+                if (k==0){                      //Cuando los minutos son iguales a 0, añadir otro 0
+                    document.write('0'); 
+                };
             document.write(k+ '</br>');}
         }
-        for (j=10; j<21; j++){
+        for (j=10; j<20; j++){                  //Hora entre 10 y 19, no se añaden ceros.
             
             for (k=0; k<60; k=k+15){
                 document.write( + j + ':' );
-
+                if (k==0){
+                    document.write('0');
+                };
             document.write(k+ '</br>');}
             
         }
-       // }
+        for (k=0; k<31; k=k+15){                //Hora==20 Solo se cuenta hasta las 20:30
+                document.write( + j + ':' );
+                if (k==0){
+                    document.write('0');
+                };
+            document.write(k+ '</br>');}
+
+
     </script>
 </body>
 </html>
