@@ -3,40 +3,40 @@
         <script>
             function contar(){
                 var i;
-                for (i=1; i<=100; i++){
-                    if(i%3==0){
+                for (i=1; i<=100; i++){ //se cuenta del 1 al 100
+                    if(i%3==0){     //se descartan los múltiplos de 3
                         continue
                     };
-                document.write(i + '</br>');
+                document.write(i + '</br>'); //se escribe en pantalla
             }
             }
             function contar2(){
                 var i;
-                bucle:
-                for (i=1; i<=100; i++){
-                    if(i%3==0){
+                bucle:      //etiqueta
+                for (i=1; i<=100; i++){ //se cuenta del 1 al 100
+                    if(i%3==0){     //se descartan los múltiplos de 3
                         continue bucle
                     };
-                    document.write(i + '</br>');
+                    document.write(i + '</br>'); //se escribe en pantalla
                 }
             }
             function meses(){
-                var meses= ["enero", "febrero", "marzo", "abril","mayo" ,"junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
+                var meses= ["enero", "febrero", "marzo", "abril","mayo" ,"junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]; //array de los meses
                 for (i=0; i<=11; i++){
-                    if(i>=5 && i<=8){
+                    if(i>=5 && i<=8){       //se descartan los meses de verano
                         continue
                     };
-                    document.write(meses[i]+' ');
+                    document.write(meses[i]+' '); //se escribe en pantalla
                 }
             }
             function meses2(){
-                var meses= ["enero", "febrero", "marzo", "abril","mayo" ,"junio","julio","agosto","septiembre","octubre","noviembre","diciembre"];
-                bucle:
+                var meses= ["enero", "febrero", "marzo", "abril","mayo" ,"junio","julio","agosto","septiembre","octubre","noviembre","diciembre"]; //array de los meses
+                bucle:      //etiqueta
                 for (i=0; i<=11; i++){
-                    if(i>=5 && i<=8){
+                    if(i>=5 && i<=8){       //se descartan los meses de verano
                         continue bucle
                     };
-                    document.write(meses[i]+' ');
+                    document.write(meses[i]+' '); //se escribe en pantalla
                 }
             }
             
@@ -45,7 +45,7 @@
     </head>
     <body>
         <script>
-            contar();
+            contar();       //ejecución de las funciones
             contar2();
             meses();
             meses2();
