@@ -7,12 +7,21 @@
     <body>
         <script>
             function numero(){
+                var numeroalto=0;
+                for (i=0; i<3; i++){
                 var numero = prompt("Introduce un número", "");
-                if (numero>10){
-                alert("Numero mayor que 10");
+                if (numero>numeroalto){
+                 
+                numeroalto=numero;
+                }
+            }
+
+                
+                if (numeroalto>10){
+                alert("ALGUNO MAYOR QUE 10");
                 }
                 else{
-                    alert("Numero no mayor que 10");
+                    alert("NINGUNO MAYOR QUE 10");
                 }
             }
             
