@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <script>
+            function factorial(num){
+
+                var resultado=1;        //se inicializa a 1
+                while (num<0 || num >10) {      //mientras el número no esté entre 0 y 10 se vuelve a pedir el número
+                    num=prompt ();
+                }
+                if(num==0){             //el factorial de 0 es 1
+                    document.write(1);
+                }
+                if (num>=1 && num<=10){         //si el número está entre 1 y 10 se multiplican todos los números entre 1 y ese número
+                    for (i=1; i<=num ;i++){
+                        resultado=resultado*i;
+                        
+                    }
+                    
+                    document.write(resultado);      // se escribe el resultado
+                }
+
+            }
+        </script>
+        <script>
+            factorial(prompt());
+        </script>
+    </body>
+</html>

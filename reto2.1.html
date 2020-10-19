@@ -1,0 +1,35 @@
+<html>
+    <body>
+        <script>
+            var horas=0;
+            var precio=0;
+            var salario=0;
+            horas=prompt("horas");
+            precio=prompt("precio");
+            if (horas<=35){
+            salario=horas*precio;
+            }
+            if (horas>35){
+                salario=35*precio;
+                
+                horas=horas-35;
+                precio=(precio*1.5);
+                
+                salario=salario+horas*precio;
+            }
+            if(salario>500 && salario<=900){
+                salario=500+(salario-500)*0.75;         //solo se aplican impuestos a partir de 500
+            }
+            if(salario>900){
+                salario=500+400*0.75+(salario-900)*0.55; //a partir de 500, 25% de impuestos; a partir de 900, 45% de impuestos
+            }
+            alert(salario);
+            
+            
+            
+            
+
+        </script>
+    </body>
+
+</html>

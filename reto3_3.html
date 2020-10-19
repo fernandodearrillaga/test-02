@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+            x=20000;       //inicializo a un número alto
+            numero=[]; //inicializo array
+            while(x>100 || x<1){        //si son más de 100 números se repite la pregunta
+            x=prompt("¿Cuántos números?");
+            }
+            for (i=0; i<x; i++){
+
+                numero[i]=prompt();     //se introducen los números en el array
+            }
+            for (i=x-1; i>-1; i--){
+                document.write(numero[i]+'</br>');  //se escriben los números
+            }
+
+        </script>
+    </body>
+</html>

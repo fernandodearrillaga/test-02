@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            numero=20000;       //inicializo a un número alto
+            while(numero>10000 || numero<1){
+            numero=prompt("¿Es primo?");
+        }
+            if (numero==1){     //si el numero es 1 escribe NO
+                document.write("NO");
+            }
+            else{
+                for(i=2;i<Math.sqrt(numero);i++){       //solo hay que comprobar hasta la raíz cuadrada del número
+                    if(numero%i==0){
+                        document.write("NO");   //si el número es múltiplo de algún número igual o superior a 2 escribe NO
+                        break;              //para que no se repita el mensaje
+                    }
+                    else{
+                        document.write("SI");       //si el número no es múltiplo de algún número igual o superior a 2 escribe SI (es número primo)
+                        break;      //para que no se repita el mensaje
+                    }
+                }
+            }
+        </script>
+    </body>
+</html>

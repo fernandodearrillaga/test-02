@@ -1,0 +1,24 @@
+<html>
+    <body>
+        <script>
+            function esPrimo(num){
+                if (num==1){     //si el numero es 1 escribe false
+                alert("false");
+            }
+            else{
+                for(i=2;i<Math.sqrt(num);i++){       //solo hay que comprobar hasta la raíz cuadrada del número
+                    if(num%i==0){
+                        alert("false");   //si el número es múltiplo de algún número igual o superior a 2 escribe false
+                        break;              //para que no se repita el mensaje
+                    }
+                    else{
+                        alert("true");       //si el número no es múltiplo de algún número igual o superior a 2 escribe true (es número primo)
+                        break;      //para que no se repita el mensaje
+                    }
+                }
+            }
+            }
+            esPrimo(37);
+        </script>
+    </body>
+</html>

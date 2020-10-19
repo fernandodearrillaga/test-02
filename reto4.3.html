@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <script>
+            function esPalindromo(texto){
+                texto=texto.toUpperCase(); //se pasa el texto a mayúsculas
+                var palindromo = true; //variable inicializada a true
+                
+                for (i=0;i<texto.length;i++){
+
+                    if(texto.charAt(i)!= texto.charAt(texto.length-i-1)){       //el primer caracter debe ser igual al último, el segundo igual al penúltimo y así sucesivamente
+
+                        palindromo=false;               //en caso contrario no es un palíndromo
+                        
+                    }
+                    
+
+                }
+                document.write(palindromo);     //devolverá true si es un palíndromo y false si no lo es
+
+            }
+        </script>
+        <script>
+            esPalindromo(prompt());
+        </script>
+    </body>
+</html>

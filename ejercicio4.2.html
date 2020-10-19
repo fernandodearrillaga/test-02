@@ -1,0 +1,25 @@
+<html>
+    <body>
+        <script>
+            function esBisiesto(anyo){
+                if(anyo%4==0){
+                    if(anyo%100==0){
+                        if(anyo%400==0){
+                            alert("SI");
+                        }
+                        else{
+                            alert("NO")
+                        }
+                    }
+                    else{
+                        alert("SI");
+                    }
+                }
+                else{
+                    alert("NO");
+                }
+            }
+            esBisiesto(2100);
+        </script>
+    </body>
+</html>

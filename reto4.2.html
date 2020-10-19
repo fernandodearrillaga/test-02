@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <script>
+            function fibonacci(num) {
+
+                while (num<0 || num >20) {      //mientras el número no esté entre 0 y 20 se vuelve a pedir el número
+                    num=prompt ();
+                }
+                resultado=[0,1];        // se inicializa el array con [0]=0 y[1]=1
+                for (i=2; i<=20; i++){
+                resultado[i]=resultado[i-1]+resultado[i-2];} //se rellena el array
+                document.write(resultado[num]);     // se devuelve el valor deseado
+                
+                
+            }
+        </script>
+        <script>
+            fibonacci(prompt());
+        </script>
+    </body>
+</html>
